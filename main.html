@@ -11,7 +11,7 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let unique = [...new Set(arr)]
-			if (unique.length < 2) return '-Infinity'
+			if (unique.length < 2) return -Infinity
 			unique.sort((a, b) => b-a)
 			return unique[1]
 		}
